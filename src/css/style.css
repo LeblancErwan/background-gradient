@@ -1,130 +1,74 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
 }
 
 section {
-    width: 100%;
-}
-
-.container {
-    width: 1440px;
-    margin: 0 auto;
+  width: 100%;
 }
 
 /* Première section */
 .linearGradientFirstExample {
-    background-color: rgba(96, 80, 220, 0.1);
+  background-color: rgba(96, 80, 220, 0.1);
 }
 
 .contenuLinearGradientFirstExample {
-    padding-top: 2%;
+  padding-top: 2%;
 }
 
 .visualAndModifCssRulesForLinearGradientFirstExample {
-    display: flex;
-    align-items: center;
 }
 
 .visualForLinearGradientFirstExample {
-    background-color: #3be7d7;
-    width: 70%;
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 400px;
+  background-color: #3be7d7;
+  height: 400px;
 }
 
 .modifCssRules {
-    background-color: #1e90ff;
-    width: 30%;
-    height: 300px;
-    margin-right: 2%;
-    margin-left: 2%;
-    padding: 2%;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
+  background-color: #1e90ff;
+  width: 30%;
+  height: 400px;
+  padding: 2%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
 .cssProperties {
-    width: 100%;
+  width: 100%;
 }
 
 .cssProperties p {
-    padding-bottom: 4%;
-    color: #000;
+  padding-bottom: 1%;
+  color: #000;
 }
 
 .cssProperties hr {
-    margin-bottom: 4%;
+  margin-bottom: 1%;
+  width: 50%;
 }
 
 .copyCode {
-    padding-top: 10%;
+  padding-top: 10%;
 }
 
 .copyCode input {
-    width: 90%;
-    height: 25px;
-    padding: 1%;
-    margin-bottom: 2%;
+  width: 90%;
+  height: 25px;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.btnCopyCode button {
 }
 
 .textLinearGradientFirstExample {
-    display: flex;
-    justify-content: center;
-    margin-top: 4%;
-    padding-bottom: 2%;
-    font-size: 18px;
+  margin-top: 4%;
+  padding-bottom: 2%;
+  font-size: 18px;
 }
 
 /* Deuxième section */
 .linearGradientSecondExample {
-    background-color: rgba(33, 23, 125, 0.2);
-}
-
-
-
-
-
-
-
-/* Responsive tablette */
-@media screen and (max-width:1024px) {
-    .container {
-        width: 980px;
-    }
-
-    .visualAndModifCssRulesForLinearGradientFirstExample {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .visualForLinearGradientFirstExample {
-        width: 90%;
-        height: 350px;
-        margin: 0;
-    }
-
-    .modifCssRules {
-        width: 90%;
-        height: 200px;
-        margin: 0;
-        margin-top: 2%;
-        padding: 0;
-    }
-
-    .cssProperties {
-        padding: 2%;
-    }
-
-    .cssProperties p {
-        padding-bottom: 1%;
-        color: #000;
-    }
-
-    .cssProperties hr {
-        margin-bottom: 1%;
-    }
+  background-color: rgba(33, 23, 125, 0.2);
 }
