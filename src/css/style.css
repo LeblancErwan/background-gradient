@@ -11,6 +11,10 @@ section {
 /* Première section */
 .linearGradientFirstExample {
   background-color: rgba(96, 80, 220, 0.1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 
 .contenuLinearGradientFirstExample {
@@ -23,6 +27,7 @@ section {
 .visualForLinearGradientFirstExample {
   background-color: #3be7d7;
   height: 400px;
+  margin-bottom: 4%;
 }
 
 .modifCssRules {
@@ -41,7 +46,6 @@ section {
 
 .cssProperties p {
   padding-bottom: 1%;
-  color: #000;
 }
 
 .cssProperties hr {
@@ -50,22 +54,21 @@ section {
 }
 
 .copyCode {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .copyCode input {
-  width: 90%;
-  height: 25px;
-  padding: 1%;
-  margin-bottom: 2%;
 }
+
 .btnCopyCode button {
+  margin-top: 4%;
 }
 
 .textLinearGradientFirstExample {
   margin-top: 4%;
   padding-bottom: 2%;
   font-size: 18px;
+  color: #000;
 }
 
 /* Deuxième section */
