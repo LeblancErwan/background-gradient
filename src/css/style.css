@@ -48,16 +48,12 @@ section {
   padding-bottom: 1%;
 }
 
-.cssProperties hr {
-  margin-bottom: 1%;
-  width: 50%;
+.cssProperties form span {
+  color: #fff;
 }
 
 .copyCode {
   padding-top: 5%;
-}
-
-.copyCode input {
 }
 
 .btnCopyCode button {

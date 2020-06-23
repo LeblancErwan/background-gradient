@@ -1,57 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-  </head>
 
-  <body>
-    <section class="linearGradientFirstExample">
-      <div class="container">
-        <div class="contenuLinearGradientFirstExample">
-          <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
-            <div
-              class="col l9 m12 s12 visualForLinearGradientFirstExample"
-            ></div>
-            <div class="col l3 m12 s12 modifCssRules">
-              <div class="cssProperties">
-                <p>Propriété une :</p>
-                <hr />
-                <p>Propriété deux :</p>
-                <hr />
-                <p>Propriété trois :</p>
-                <hr />
-                <div class="copyCode">
-                  <input
-                    type="text"
-                    placeholder="Voici le code que vous avez utilisé"
-                  />
-                  <div class="btnCopyCode">
-                    <button class="waves-effect waves-light btn-small">
-                      Copier
-                    </button>
-                  </div>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- <link href="nouislider.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+  <section class="linearGradientFirstExample">
+    <div class="container">
+      <div class="contenuLinearGradientFirstExample">
+        <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
+          <div class="col l8 m12 s12 visualForLinearGradientFirstExample"></div>
+          <div class="col l1"></div>
+          <div class="col l3 m12 s12 modifCssRules">
+            <div class="cssProperties">
+              <p>Propriété une :</p>
+              <form action="#">
+                <p class="range-field">
+                  <input type="range" id="test5" min="0" max="100" />
+                </p>
+              </form>
+              <p>Propriété deux :</p>
+              <!-- select : -->
+              <!-- <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Select</label>
+              </div> -->
+              <p>Propriété trois :</p>
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Choix 1</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Choix 2</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Choix 3</span>
+                  </label>
+                </p>
+              </form>
+              <div class="copyCode">
+                <input type="text" placeholder="Voici le code que vous avez utilisé" />
+                <div class="btnCopyCode">
+                  <button class="waves-effect waves-light btn-small">
+                    Copier
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row textLinearGradientFirstExample">
-            <p class="center-align col l12 m12">
-              Nous montrons ici les propriétés de Linear Gradient en CSS.
-            </p>
-          </div>
+        </div>
+        <div class="row textLinearGradientFirstExample">
+          <p class="center-align col l12 m12">
+            Nous montrons ici les propriétés de Linear Gradient en CSS.
+            <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            obcaecati consequuntur labore dolorem? Mollitia quo, et
+            necessitatibus voluptate dolorum quaerat? Mollitia quo, et
+            necessitatibus voluptate dolorum quaerat?
+          </p>
         </div>
       </div>
-    </section>
-    <!-- 
+    </div>
+  </section>
+
+
+
+
+  <!-- 
     <section class="linearGradientSecondExample">
       <div class="container">
         <div class="contenuLinearGradientFirstExample">
@@ -84,7 +119,9 @@
       </div>
     </section> -->
 
-    <script src="./main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
+  <script src="./main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script src="nouislider.js"></script> -->
+</body>
+
 </html>
