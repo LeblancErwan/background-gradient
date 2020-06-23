@@ -21,8 +21,7 @@ section {
   padding-top: 2%;
 }
 
-.visualAndModifCssRulesForLinearGradientFirstExample {
-}
+.visualAndModifCssRulesForLinearGradientFirstExample {}
 
 .visualForLinearGradientFirstExample {
   background-color: #3be7d7;
@@ -51,6 +50,7 @@ section {
 .cssProperties form span {
   color: #fff;
 }
+
 
 .copyCode {
   padding-top: 5%;
