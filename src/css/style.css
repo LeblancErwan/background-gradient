@@ -24,15 +24,17 @@ section {
 .visualAndModifCssRulesForLinearGradientFirstExample {}
 
 .visualForLinearGradientFirstExample {
-  background-color: #3be7d7;
-  height: 400px;
+  background: linear-gradient(70deg, rgb(0, 204, 203) 40%, rgb(116, 208, 241) 40%),
+    url("../../images/linearGradient1.jpg");
+  background-size: cover;
+  height: 450px;
   margin-bottom: 4%;
 }
 
 .modifCssRules {
   background-color: #1e90ff;
   width: 30%;
-  height: 400px;
+  height: 450px;
   padding: 2%;
   font-size: 18px;
   display: flex;
@@ -43,8 +45,8 @@ section {
   width: 100%;
 }
 
-.cssProperties p {
-  padding-bottom: 1%;
+.cssProperties form {
+  padding-bottom: 4%;
 }
 
 .cssProperties form span {
@@ -52,12 +54,8 @@ section {
 }
 
 
-.copyCode {
-  padding-top: 5%;
-}
-
-.btnCopyCode button {
-  margin-top: 4%;
+input {
+  color: #fff;
 }
 
 .textLinearGradientFirstExample {
@@ -70,4 +68,18 @@ section {
 /* Deuxième section */
 .linearGradientSecondExample {
   background-color: rgba(33, 23, 125, 0.2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.visualForLinearGradientSecondExample {
+  background: linear-gradient(-47deg, rgb(248, 142, 85) 25%, transparent 65%),
+    linear-gradient(45deg, rgb(253, 108, 158) 34%, transparent 78%),
+    linear-gradient(100deg, rgb(223, 115, 255) 55%, transparent 81%),
+    linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
+  background-size: cover;
+  height: 450px;
+  margin-bottom: 4%;
 }
