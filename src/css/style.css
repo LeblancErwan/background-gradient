@@ -24,8 +24,9 @@ section {
 .visualAndModifCssRulesForLinearGradientFirstExample {}
 
 .visualForLinearGradientFirstExample {
-  background: linear-gradient(70deg, rgb(0, 204, 203) 40%, rgb(116, 208, 241) 40%),
-    url("../../images/linearGradient1.jpg");
+  background: linear-gradient(70deg, rgb(0, 204, 203) 40%, transparent 0%),
+    /* rgb(116, 208, 241) */
+    url("../images/linearGradient1.jpg");
   background-size: cover;
   height: 450px;
   margin-bottom: 4%;
@@ -75,6 +76,24 @@ input {
 }
 
 .visualForLinearGradientSecondExample {
+  background: linear-gradient(-45deg, rgb(96, 80, 220) 30%, transparent 30%),
+    linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent 45%),
+    linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent 45%),
+    linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
+  background-size: cover;
+  height: 450px;
+  margin-bottom: 4%;
+}
+
+.linearGradientThirdExample {
+  background-color: rgba(38, 196, 236, 0.1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.visualForLinearGradientThirdExample {
   background: linear-gradient(-47deg, rgb(248, 142, 85) 25%, transparent 65%),
     linear-gradient(45deg, rgb(253, 108, 158) 34%, transparent 78%),
     linear-gradient(100deg, rgb(223, 115, 255) 55%, transparent 81%),
