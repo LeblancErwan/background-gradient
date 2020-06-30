@@ -67,6 +67,34 @@ const radialGradientSecondExample = function () {
 
 }
 
+
+// section 1 conic gradient
+const conicGradientSecondExample = function () {
+    let backgroundConicGradientSecondExample = document.getElementById("visualForConicGradientFirstExample");
+    const slicesNumber = document.querySelector('input[name="slicesNumber"]')
+    const slicesArray = [
+        "rgb(150, 131, 236) 200deg",
+        "rgb(10, 186, 181) 124deg 216deg",
+        "rgb(1, 49, 180) 65deg 124deg",
+        "rgb(44, 117, 255) 18deg 65deg",
+        "rgb(142, 162, 198) 15deg 45deg",
+        "rgb(58, 142, 186) 15deg",
+
+    ]
+
+    let cssPropertyConic = "rgb(150, 131, 236) 200deg";
+
+    for (let i = 1; i < slicesNumber.value; i++) {
+
+        cssPropertyConic = slicesArray[i] + ", " + cssPropertyConic;
+
+    }
+    cssPropertyConic = "radial-gradient(circle at 50%, transparent 35%, rgba(169, 234, 254) 35%), conic-gradient(" + cssPropertyConic + ")"
+
+    backgroundConicGradientSecondExample.style.background = cssPropertyConic
+    console.log(cssPropertyConic)
+}
+
 const addEventListenerToInputs = function (inputsCalled, functionCalled) {
     let inputsArray = document.querySelectorAll(inputsCalled);
     for (let i = 0; i < inputsArray.length; i++) {
@@ -78,3 +106,4 @@ addEventListenerToInputs(".linearGradientFirstExample input", linearGradientFirs
 addEventListenerToInputs(".linearGradientThirdExample input", linearGradientThirdExample)
 addEventListenerToInputs(".linearGradientSecondExample input", linearGradientSecondExample)
 addEventListenerToInputs(".radialGradientSecondExample input", radialGradientSecondExample)
+addEventListenerToInputs(".conicGradientFirstExample input", conicGradientSecondExample)
