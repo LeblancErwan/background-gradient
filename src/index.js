@@ -4,9 +4,23 @@ const linearGradientFirstExample = function () {
     const degrees = document.querySelector('input[name="degrees"]')
     const width = document.querySelector('input[name="width"]')
     const degraded = document.querySelector('input[name="degraded"]')
-    backgroundLinearGradientFirstExample.style.background = "linear-gradient(" + degrees.value + "deg, rgb(0, 204, 203) " + width.value + "%, transparent " + degraded.value + "%), url('../images/linearGradient1.jpg')";
-}
 
+    const colorOrTransparentArray = [
+        colorOrTransparent = document.querySelector('.linearGradientFirstExample input[name="colorOrTransparentChecked"]')
+    ]
+
+    for (let i = 0; i < colorOrTransparentArray.length; i++) {
+
+        if (colorOrTransparentArray[0].checked == true) {
+            shape = "transparent "
+        } else {
+            shape = "rgb(116, 208, 241) "
+        }
+
+        backgroundLinearGradientFirstExample.style.background = "linear-gradient(" + degrees.value + "deg, rgb(0, 204, 203) " + width.value + "%, " + shape + " " + degraded.value + "%), url('../images/linearGradient1.jpg')";
+    }
+
+}
 // section 2 linear gradient
 const linearGradientSecondExample = function () {
     let backgroundLinearGradientSecondExample = document.getElementById("visualForLinearGradientSecondExample");
@@ -44,6 +58,19 @@ const linearGradientThirdExample = function () {
     console.log("linear-gradient(-47 deg, rgb(248, 142, 85) 25%, transparent" + firstDegraded.value + "%), linear-gradient(45 deg, rgb(253, 108, 158) 34%, transparent" + secondDegraded.value + "%), linear-gradient(100 deg, rgb(223, 115, 255) 55%, transparent" + thirdDegraded.value + "%), linear-gradient(30 deg, rgb(121, 248, 248) 100%, transparent" + fourthDegraded.value + "%)")
 }
 
+// section 1 radial gradient
+const radialGradientfirstExample = function () {
+    let backgroundRadialGradientFirstExample = document.getElementById("visualForRadialGradientFirstExample");
+    const blueCircle = document.querySelector('input[name="blueCircle"]')
+    const pictureCircle = document.querySelector('input[name="pictureCircle"]')
+    const degradedBlueCircle = document.querySelector('input[name="degradedBlueCircle"]')
+    const degradedPictureCircle = document.querySelector('input[name="degradedPictureCircle"]')
+    backgroundRadialGradientFirstExample.style.background = "radial-gradient(circle at 50%, transparent " + blueCircle.value + "%, rgba(223, 242, 255) " + degradedBlueCircle.value + "%), radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) " + pictureCircle.value + "%, #1e90ff " + degradedPictureCircle.value + "%), url('../images/profilePicture.jpg')";
+
+    console.log("radial-gradient(circle at 50%, transparent " + blueCircle.value + "%, rgba(223, 242, 255) " + degradedBlueCircle.value + "%), radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) " + pictureCircle.value + "%, #1e90ff " + degradedBlueCircle.value + "%), url('../images/profilePicture.jpg')")
+
+}
+
 // section 2 radial gradient
 const radialGradientSecondExample = function () {
     let backgroundRadialGradientSecondExample = document.getElementById("visualForRadialGradientSecondExample");
@@ -66,7 +93,6 @@ const radialGradientSecondExample = function () {
     }
 
 }
-
 
 // section 1 conic gradient
 const conicGradientSecondExample = function () {
@@ -107,3 +133,4 @@ addEventListenerToInputs(".linearGradientThirdExample input", linearGradientThir
 addEventListenerToInputs(".linearGradientSecondExample input", linearGradientSecondExample)
 addEventListenerToInputs(".radialGradientSecondExample input", radialGradientSecondExample)
 addEventListenerToInputs(".conicGradientFirstExample input", conicGradientSecondExample)
+addEventListenerToInputs(".radialGradientFirstExample input", radialGradientfirstExample)
