@@ -43,6 +43,9 @@ section {
 .copyCode {
   padding-left: 2%;
 }
+.copyCode input {
+  color: #000 !important;
+}
 
 .cssProperties {
   width: 100%;

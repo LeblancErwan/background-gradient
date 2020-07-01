@@ -16,11 +16,27 @@ const linearGradientFirstExample = function () {
         } else {
             shape = "rgb(116, 208, 241) "
         }
+        cssProperty = "linear-gradient(" + degrees.value + "deg, rgb(0, 204, 203) " + width.value + "%, " + shape + " " + degraded.value + "%), url('../images/linearGradient1.jpg')"
+        backgroundLinearGradientFirstExample.style.background = cssProperty;
 
-        backgroundLinearGradientFirstExample.style.background = "linear-gradient(" + degrees.value + "deg, rgb(0, 204, 203) " + width.value + "%, " + shape + " " + degraded.value + "%), url('../images/linearGradient1.jpg')";
+
+
+        let copyCodeLinearGradientFirstExample = document.querySelector('.linearGradientFirstExample .copyCode input')
+        let inputValue = copyCodeLinearGradientFirstExample.getAttribute('value');
+
+        copyCodeLinearGradientFirstExample.setAttribute('value', cssProperty);
     }
 
+    function copyCode() {
+        let copyText = document.querySelector('.linearGradientFirstExample .copyCode input')
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+    document.getElementById('copyCodeSection1').addEventListener("click", copyCode);
 }
+
+
 // section 2 linear gradient
 const linearGradientSecondExample = function () {
     let backgroundLinearGradientSecondExample = document.getElementById("visualForLinearGradientSecondExample");
@@ -43,7 +59,19 @@ const linearGradientSecondExample = function () {
         }
         backgroundLinearGradientSecondExample.style.background = cssProperty;
 
+        let copyCodeLinearGradientSecondExample = document.querySelector('.linearGradientSecondExample .copyCode input')
+        let inputValue = copyCodeLinearGradientSecondExample.getAttribute('value');
+
+        copyCodeLinearGradientSecondExample.setAttribute('value', cssProperty);
     }
+
+    function copyCode() {
+        let copyText = document.querySelector('.linearGradientSecondExample .copyCode input')
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+    document.getElementById('copyCodeSection2').addEventListener("click", copyCode);
 }
 
 // section 3 linear gradient
@@ -53,9 +81,23 @@ const linearGradientThirdExample = function () {
     const secondDegraded = document.querySelector('input[name="secondDegraded"]')
     const thirdDegraded = document.querySelector('input[name="thirdDegraded"]')
     const fourthDegraded = document.querySelector('input[name="fourthDegraded"]')
-    backgroundLinearGradientThirdExample.style.background =
+    cssProperty =
         "linear-gradient(-47deg, rgb(248, 142, 85) 25%, transparent " + firstDegraded.value + "%), linear-gradient(45deg, rgb(253, 108, 158) 34%, transparent " + secondDegraded.value + "%), linear-gradient(100deg, rgb(223, 115, 255) 55%, transparent " + thirdDegraded.value + "%), linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent " + fourthDegraded.value + "%)";
-    console.log("linear-gradient(-47 deg, rgb(248, 142, 85) 25%, transparent" + firstDegraded.value + "%), linear-gradient(45 deg, rgb(253, 108, 158) 34%, transparent" + secondDegraded.value + "%), linear-gradient(100 deg, rgb(223, 115, 255) 55%, transparent" + thirdDegraded.value + "%), linear-gradient(30 deg, rgb(121, 248, 248) 100%, transparent" + fourthDegraded.value + "%)")
+    backgroundLinearGradientThirdExample.style.background = cssProperty;
+
+    let copyCodeLinearGradientThirdExample = document.querySelector('.linearGradientThirdExample .copyCode input')
+    let inputValue = copyCodeLinearGradientThirdExample.getAttribute('value');
+
+    copyCodeLinearGradientThirdExample.setAttribute('value', cssProperty);
+
+    function copyCode() {
+        let copyText = document.querySelector('.linearGradientThirdExample .copyCode input')
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+    document.getElementById('copyCodeSection3').addEventListener("click", copyCode);
+
 }
 
 // section 1 radial gradient
@@ -65,10 +107,21 @@ const radialGradientfirstExample = function () {
     const pictureCircle = document.querySelector('input[name="pictureCircle"]')
     const degradedBlueCircle = document.querySelector('input[name="degradedBlueCircle"]')
     const degradedPictureCircle = document.querySelector('input[name="degradedPictureCircle"]')
-    backgroundRadialGradientFirstExample.style.background = "radial-gradient(circle at 50%, transparent " + blueCircle.value + "%, rgba(223, 242, 255) " + degradedBlueCircle.value + "%), radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) " + pictureCircle.value + "%, #1e90ff " + degradedPictureCircle.value + "%), url('../images/profilePicture.jpg')";
+    cssProperty = "radial-gradient(circle at 50%, transparent " + blueCircle.value + "%, rgba(223, 242, 255) " + degradedBlueCircle.value + "%), radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) " + pictureCircle.value + "%, #1e90ff " + degradedPictureCircle.value + "%), url('../images/profilePicture.jpg')";
+    backgroundRadialGradientFirstExample.style.background = cssProperty;
 
-    console.log("radial-gradient(circle at 50%, transparent " + blueCircle.value + "%, rgba(223, 242, 255) " + degradedBlueCircle.value + "%), radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) " + pictureCircle.value + "%, #1e90ff " + degradedBlueCircle.value + "%), url('../images/profilePicture.jpg')")
+    let copyCodeRadialGradientfirstExample = document.querySelector('.radialGradientFirstExample .copyCode input')
+    let inputValue = copyCodeRadialGradientfirstExample.getAttribute('value');
 
+    copyCodeRadialGradientfirstExample.setAttribute('value', cssProperty);
+
+    function copyCode() {
+        let copyText = document.querySelector('.radialGradientFirstExample .copyCode input')
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+    document.getElementById('copyCodeSection4').addEventListener("click", copyCode);
 }
 
 // section 2 radial gradient
@@ -88,9 +141,23 @@ const radialGradientSecondExample = function () {
         } else {
             shape = "ellipse "
         }
-        backgroundRadialGradientSecondExample.style.background = "radial-gradient(" +
+        cssProperty = "radial-gradient(" +
             shape + "at " + XplaceSecondRadialGradient.value + "% " + YplaceSecondRadialGradient.value + "%, transparent 30%, rgb(96, 80, 220) " + degradeSecondRadialGradient.value + "%)";
+        backgroundRadialGradientSecondExample.style.background = cssProperty;
+
+        let copyCodeRadialGradientSecondExample = document.querySelector('.radialGradientSecondExample .copyCode input')
+        let inputValue = copyCodeRadialGradientSecondExample.getAttribute('value');
+
+        copyCodeRadialGradientSecondExample.setAttribute('value', cssProperty);
     }
+
+    function copyCode() {
+        let copyText = document.querySelector('.radialGradientSecondExample .copyCode input')
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+    document.getElementById('copyCodeSection5').addEventListener("click", copyCode);
 
 }
 
@@ -118,8 +185,22 @@ const conicGradientSecondExample = function () {
     cssPropertyConic = "radial-gradient(circle at 50%, transparent 35%, rgba(169, 234, 254) 35%), conic-gradient(" + cssPropertyConic + ")"
 
     backgroundConicGradientSecondExample.style.background = cssPropertyConic
-    console.log(cssPropertyConic)
+
+    let copyCodeConicGradientSecondExample = document.querySelector('.conicGradientFirstExample .copyCode input')
+    let inputValue = copyCodeConicGradientSecondExample.getAttribute('value');
+
+    copyCodeConicGradientSecondExample.setAttribute('value', cssPropertyConic);
+
+    function copyCode() {
+        let copyText = document.querySelector('.conicGradientFirstExample .copyCode input')
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+    document.getElementById('copyCodeSection6').addEventListener("click", copyCode);
 }
+
+
 
 const addEventListenerToInputs = function (inputsCalled, functionCalled) {
     let inputsArray = document.querySelectorAll(inputsCalled);
