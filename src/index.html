@@ -21,57 +21,50 @@
           <div class="col l3 m12 s12 modifCssRules">
             <div class="row cssProperties">
               <div class="col l12 m6 s12">
-                <p>Angle :</p>
-                <form action="#">
-                  <p class="range-field">
-                    <input name="degrees" value="70" type="range" min="0" max="360" />
-                  </p>
-                </form>
-                <p>Surface :</p>
-                <form action="#">
-                  <p class="range-field">
-                    <input name="width" value="40" type="range" min="0" max="100" />
-                  </p>
-                </form>
-                <p>Dégradé :</p>
-                <form action="#">
-                  <p class="range-field">
-                    <input name="degraded" value="0" type="range" min="0" max="100" />
-                  </p>
+                <form action="#"></form>
+                <p class="flow-text">Angle :</p>
+                <p class="range-field">
+                  <input name="degrees" value="70" type="range" min="0" max="360" />
+                </p>
+
+                <p class="flow-text">Surface :</p>
+                <p class="range-field">
+                  <input name="width" value="40" type="range" min="0" max="100" />
+                </p>
+                <p class="flow-text">Dégradé :</p>
+                <p class="range-field">
+                  <input name="degraded" value="0" type="range" min="0" max="100" />
+                </p>
                 </form>
               </div>
+
               <div class="col l12 m5 offset-m1 s12">
-                <p>Couleur</p>
-                <form action="#">
-                  <p>
-                    <label>
-                      <input name="colorOrTransparentChecked" type="radio" checked />
-                      <span>Transparent</span>
-                    </label>
-                  </p>
-                  <p></p>
-                  <p>
-                    <label>
-                      <input name="colorOrTransparentChecked" type="radio" />
-                      <span>Couleur</span>
-                    </label>
-                  </p>
-                </form>
+                <p class="flow-text">Couleur</p>
+                <p>
+                  <label>
+                    <input name="colorOrTransparentChecked" type="radio" checked />
+                    <span class="flow-text">Transparent</span>
+                  </label>
+                </p>
+                <p></p>
+                <p>
+                  <label>
+                    <input name="colorOrTransparentChecked" type="radio" />
+                    <span class="flow-text">Couleur</span>
+                  </label>
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12">
+          <p class="center-align col l12 m12 flow-text">
             Nous montrons ici les propriétés de Linear Gradient en CSS.
             <br /><br />
             <div class="copyCode">
-              <input type="text" value="Voici le code que vous avez utilisé" disabled />
-
-              <!-- <span placeholder="Voici le code que vous avez utilisé"></span> -->
-              <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Voici le code que vous avez utilisé"></textarea> -->
+              <input type="text" value="Voici le code que vous avez utilisé" class="flow-text"  readonly/>
               <div class="btnCopyCode">
-                <button id="copyCodeSection1" class="waves-effect waves-light btn-small">
+                <button id="copyCodeSection1" class="waves-effect waves-light btn-small flow-text">
                   Copier
                 </button>
               </div>
@@ -90,10 +83,11 @@
           <div class="col l1"></div>
           <div class="col l3 m12 s12 modifCssRules">
             <div class="cssProperties">
-              <p>Nombre de couleurs :</p>
+
               <form action="#">
+                <p class="flow-text">Nombre de couleurs :</p>
                 <p class="range-field">
-                  <input name="colorsNumber" value="1" type="range" min="1" max="4" />
+                  <input name="colorsNumber" value="2" type="range" min="1" max="4" />
                 </p>
               </form>
 
@@ -101,13 +95,13 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12">
+          <p class="center-align col l12 m12 flow-text">
             Nous montrons ici les propriétés de Linear Gradient en CSS.
             <br /><br />
             <div class="copyCode">
-              <input type="text" value="Voici le code que vous avez utilisé" disabled />
+              <input type="text" value="Voici le code que vous avez utilisé" class="flow-text" readonly/>
               <div class="btnCopyCode">
-                <button id="copyCodeSection2" class="waves-effect waves-light btn-small">
+                <button id="copyCodeSection2" class="waves-effect waves-light btn-small flow-text">
                   Copier
                 </button>
               </div>
@@ -126,7 +120,7 @@
           <div class="col l1"></div>
           <div class="col l3 m12 s12 modifCssRules">
             <div class="cssProperties">
-              <p>Dégradé :</p>
+              <p class="flow-text">Dégradé :</p>
               <form action="#">
                 <p class="range-field">
                   <input name="firstDegraded" value="65" type="range" min="0" max="100" />
@@ -146,13 +140,13 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12">
+          <p class="center-align col l12 m12 flow-text">
             Nous montrons ici les propriétés de Linear Gradient en CSS.
             <br /><br />
             <div class="copyCode">
-              <input type="text" value="Voici le code que vous avez utilisé" disabled />
+              <input type="text" value="Voici le code que vous avez utilisé" readonly/>
               <div class="btnCopyCode">
-                <button id="copyCodeSection3" class="waves-effect waves-light btn-small">
+                <button id="copyCodeSection3" class="waves-effect waves-light btn-small flow-text">
                   Copier
                 </button>
               </div>
@@ -173,14 +167,12 @@
           <div class="col l3 m12 s12 modifCssRules">
             <div class="row cssProperties">
               <div class="col l12 m6 s12">
-                <p>Blue circle size :</p>
                 <form action="#">
+                  <p class="flow-text">Blue circle size :</p>
                   <p class="range-field">
                     <input type="range" name="blueCircle" value="34" min="0" max="100" />
                   </p>
-                </form>
-                <p>Picture size :</p>
-                <form action="#">
+                  <p class="flow-text">Picture size :</p>
                   <p class="range-field">
                     <input type="range" name="pictureCircle" value="35" min="0" max="100" />
                   </p>
@@ -188,14 +180,12 @@
               </div>
               <div class="col l12 m1 s12"></div>
               <div class="col l12 m5 s12">
-                <p>Dégradé blue circle :</p>
                 <form action="#">
+                  <p class="flow-text">Dégradé blue circle :</p>
                   <p class="range-field">
                     <input type="range" name="degradedBlueCircle" value="34" min="0" max="100" />
                   </p>
-                </form>
-                <p>Dégradé picture :</p>
-                <form action="#">
+                  <p class="flow-text">Dégradé picture :</p>
                   <p class="range-field">
                     <input type="range" name="degradedPictureCircle" value="34" min="0" max="100" />
                   </p>
@@ -207,13 +197,13 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12">
+          <p class="center-align col l12 m12 flow-text">
             Nous montrons ici les propriétés de Radial Gradient en CSS.
             <br /><br />
             <div class="copyCode">
-              <input type="text" value="Voici le code que vous avez utilisé" disabled />
+              <input type="text" value="Voici le code que vous avez utilisé" readonly/>
               <div class="btnCopyCode">
-                <button id="copyCodeSection4" class="waves-effect waves-light btn-small">
+                <button id="copyCodeSection4" class="waves-effect waves-light btn-small flow-text">
                   Copier
                 </button>
               </div>
@@ -233,20 +223,17 @@
           <div class="col l3 m12 s12 modifCssRules">
             <div class="row cssProperties">
               <div class="col l12 m6 s12">
-                <p>Dégradé :</p>
                 <form action="#">
+                  <p class="flow-text">Dégradé :</p>
+
                   <p class="range-field">
                     <input name="degradeSecondRadialGradient" value="82" type="range" min="0" max="100" />
                   </p>
-                </form>
-                <p>X place :</p>
-                <form action="#">
+                  <p class="flow-text">X place :</p>
                   <p class="range-field">
                     <input name="XplaceSecondRadialGradient" value="0" type="range" min="0" max="100" />
                   </p>
-                </form>
-                <p>Y place :</p>
-                <form action="#">
+                  <p class="flow-text">Y place :</p>
                   <p class="range-field">
                     <input name="YplaceSecondRadialGradient" value="50" type="range" min="0" max="100" />
                   </p>
@@ -254,19 +241,19 @@
               </div>
               <div class="col l12 m1 s12"></div>
               <div class="col l12 m5 s12">
-                <p>Shape :</p>
+                <p class="flow-text">Shape :</p>
                 <form action="#">
                   <p>
                     <label>
                       <input name="circleAndEllipseChecked" type="radio" checked />
-                      <span>Circle</span>
+                      <span class="flow-text">Circle</span>
                     </label>
                   </p>
                   <p></p>
                   <p>
                     <label>
                       <input name="circleAndEllipseChecked" type="radio" />
-                      <span>Ellipse</span>
+                      <span class="flow-text">Ellipse</span>
                     </label>
                   </p>
                 </form>
@@ -276,13 +263,13 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12">
+          <p class="center-align col l12 m12 flow-text">
             Nous montrons ici les propriétés de Radial Gradient en CSS.
             <br /><br />
             <div class="copyCode">
-              <input type="text" value="Voici le code que vous avez utilisé" disabled />
+              <input type="text" value="Voici le code que vous avez utilisé" class="flow-text" readonly/>
               <div id="copyCodeSection5" class="btnCopyCode">
-                <button id="copyCodeSection4" class="waves-effect waves-light btn-small">
+                <button id="copyCodeSection4" class="waves-effect waves-light btn-small flow-text">
                   Copier
                 </button>
               </div>
@@ -301,8 +288,9 @@
           <div class="col l1"></div>
           <div class="col l3 m12 s12 modifCssRules">
             <div class="cssProperties">
-              <p>Nombre de sections :</p>
               <form action="#">
+                <p class="flow-text">Nombre de sections :</p>
+
                 <p class="range-field">
                   <input name="slicesNumber" value="2" type="range" min="2" max="6" />
                 </p>
@@ -312,13 +300,13 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12">
+          <p class="center-align col l12 m12 flow-text">
             Nous montrons ici les propriétés de Conic Gradient en CSS.
             <br /><br />
             <div class="copyCode">
-              <input type="text" value="Voici le code que vous avez utilisé" disabled />
+              <input type="text" value="Voici le code que vous avez utilisé" class="flow-text" readonly/>
               <div class="btnCopyCode">
-                <button id="copyCodeSection6" class="waves-effect waves-light btn-small">
+                <button id="copyCodeSection6" class="waves-effect waves-light btn-small flow-text">
                   Copier
                 </button>
               </div>

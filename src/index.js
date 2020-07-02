@@ -82,7 +82,7 @@ const linearGradientThirdExample = function () {
     const thirdDegraded = document.querySelector('input[name="thirdDegraded"]')
     const fourthDegraded = document.querySelector('input[name="fourthDegraded"]')
     cssProperty =
-        "linear-gradient(-47deg, rgb(248, 142, 85) 25%, transparent " + firstDegraded.value + "%), linear-gradient(45deg, rgb(253, 108, 158) 34%, transparent " + secondDegraded.value + "%), linear-gradient(100deg, rgb(223, 115, 255) 55%, transparent " + thirdDegraded.value + "%), linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent " + fourthDegraded.value + "%)";
+        "linear-gradient(-45deg, rgb(248, 142, 85) 30%, transparent " + firstDegraded.value + "%), linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent " + secondDegraded.value + "%), linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent " + thirdDegraded.value + "%), linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent " + fourthDegraded.value + "%)";
     backgroundLinearGradientThirdExample.style.background = cssProperty;
 
     let copyCodeLinearGradientThirdExample = document.querySelector('.linearGradientThirdExample .copyCode input')

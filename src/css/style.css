@@ -62,7 +62,9 @@ section {
 input {
   color: #fff;
 }
-
+label {
+  color: #fff !important;
+}
 .textLinearGradientFirstExample {
   margin-top: 4%;
   padding-bottom: 2%;
@@ -81,12 +83,11 @@ input {
 }
 
 #visualForLinearGradientSecondExample {
-  background: linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
-
-  /* linear-gradient(-45deg, rgb(96, 80, 220) 30%, transparent 30%),
+  background: linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent 45%),
+    linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%),
+    linear-gradient(-45deg, rgb(96, 80, 220) 30%, transparent 30%),
     linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent 45%),
-    linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent 45%),
-    linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%); */
+    linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
   background-size: cover;
   height: 450px;
   margin-bottom: 4%;
@@ -102,9 +103,9 @@ input {
 }
 
 #visualForLinearGradientThirdExample {
-  background: linear-gradient(-47deg, rgb(248, 142, 85) 25%, transparent 65%),
-    linear-gradient(45deg, rgb(253, 108, 158) 34%, transparent 78%),
-    linear-gradient(100deg, rgb(223, 115, 255) 55%, transparent 81%),
+  background: linear-gradient(-45deg, rgb(248, 142, 85) 30%, transparent 65%),
+    linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent 78%),
+    linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent 81%),
     linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
   background-size: cover;
   height: 450px;
@@ -151,8 +152,8 @@ input {
 }
 
 /* Responsive tablette */
-@media screen and (max-width: 1024px) {
-  .textLinearGradientFirstExample {
+@media screen and (max-width: 992px) {
+  /* .textLinearGradientFirstExample {
     font-size: 24px;
   }
 
@@ -171,5 +172,5 @@ input {
   form span {
     margin-top: 8% !important;
     font-size: 20px !important;
-  }
+  } */
 }
