@@ -17,14 +17,14 @@ const linearGradientFirstExample = function () {
             shape = "rgb(116, 208, 241) "
         }
         cssProperty = "linear-gradient(" + degrees.value + "deg, rgb(0, 204, 203) " + width.value + "%, " + shape + " " + degraded.value + "%), url('../images/linearGradient1.jpg')"
-        backgroundLinearGradientFirstExample.style.background = cssProperty;
+        backgroundLinearGradientFirstExample.style.backgroundImage = cssProperty;
 
 
 
         let copyCodeLinearGradientFirstExample = document.querySelector('.linearGradientFirstExample .copyCode input')
         let inputValue = copyCodeLinearGradientFirstExample.getAttribute('value');
 
-        copyCodeLinearGradientFirstExample.setAttribute('value', cssProperty);
+        copyCodeLinearGradientFirstExample.setAttribute('value', "background-image : " + cssProperty);
     }
 
     function copyCode() {
@@ -57,12 +57,12 @@ const linearGradientSecondExample = function () {
             cssProperty = ", " + colorsArray[i] + cssProperty;
 
         }
-        backgroundLinearGradientSecondExample.style.background = cssProperty;
+        backgroundLinearGradientSecondExample.style.backgroundImage = cssProperty;
 
         let copyCodeLinearGradientSecondExample = document.querySelector('.linearGradientSecondExample .copyCode input')
         let inputValue = copyCodeLinearGradientSecondExample.getAttribute('value');
 
-        copyCodeLinearGradientSecondExample.setAttribute('value', cssProperty);
+        copyCodeLinearGradientSecondExample.setAttribute('value', "background-image : " + cssProperty);
     }
 
     function copyCode() {
@@ -83,12 +83,12 @@ const linearGradientThirdExample = function () {
     const fourthDegraded = document.querySelector('input[name="fourthDegraded"]')
     cssProperty =
         "linear-gradient(-45deg, rgb(248, 142, 85) 30%, transparent " + firstDegraded.value + "%), linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent " + secondDegraded.value + "%), linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent " + thirdDegraded.value + "%), linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent " + fourthDegraded.value + "%)";
-    backgroundLinearGradientThirdExample.style.background = cssProperty;
+    backgroundLinearGradientThirdExample.style.backgroundImage = cssProperty;
 
     let copyCodeLinearGradientThirdExample = document.querySelector('.linearGradientThirdExample .copyCode input')
     let inputValue = copyCodeLinearGradientThirdExample.getAttribute('value');
 
-    copyCodeLinearGradientThirdExample.setAttribute('value', cssProperty);
+    copyCodeLinearGradientThirdExample.setAttribute('value', "background-image : " + cssProperty);
 
     function copyCode() {
         let copyText = document.querySelector('.linearGradientThirdExample .copyCode input')
@@ -108,12 +108,12 @@ const radialGradientfirstExample = function () {
     const degradedBlueCircle = document.querySelector('input[name="degradedBlueCircle"]')
     const degradedPictureCircle = document.querySelector('input[name="degradedPictureCircle"]')
     cssProperty = "radial-gradient(circle at 50%, transparent " + blueCircle.value + "%, rgba(223, 242, 255) " + degradedBlueCircle.value + "%), radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) " + pictureCircle.value + "%, #1e90ff " + degradedPictureCircle.value + "%), url('../images/profilePicture.jpg')";
-    backgroundRadialGradientFirstExample.style.background = cssProperty;
+    backgroundRadialGradientFirstExample.style.backgroundImage = cssProperty;
 
     let copyCodeRadialGradientfirstExample = document.querySelector('.radialGradientFirstExample .copyCode input')
     let inputValue = copyCodeRadialGradientfirstExample.getAttribute('value');
 
-    copyCodeRadialGradientfirstExample.setAttribute('value', cssProperty);
+    copyCodeRadialGradientfirstExample.setAttribute('value', "background-image : " + cssProperty);
 
     function copyCode() {
         let copyText = document.querySelector('.radialGradientFirstExample .copyCode input')
@@ -142,13 +142,13 @@ const radialGradientSecondExample = function () {
             shape = "ellipse "
         }
         cssProperty = "radial-gradient(" +
-            shape + "at " + XplaceSecondRadialGradient.value + "% " + YplaceSecondRadialGradient.value + "%, transparent 30%, rgb(96, 80, 220) " + degradeSecondRadialGradient.value + "%)";
-        backgroundRadialGradientSecondExample.style.background = cssProperty;
+            shape + "at " + XplaceSecondRadialGradient.value + "% " + YplaceSecondRadialGradient.value + "%, transparent 30%, rgb(96, 80, 220) " + degradeSecondRadialGradient.value + "%), url('../images/radialGradient2.jpg')"
+        backgroundRadialGradientSecondExample.style.backgroundImage = cssProperty;
 
         let copyCodeRadialGradientSecondExample = document.querySelector('.radialGradientSecondExample .copyCode input')
         let inputValue = copyCodeRadialGradientSecondExample.getAttribute('value');
 
-        copyCodeRadialGradientSecondExample.setAttribute('value', cssProperty);
+        copyCodeRadialGradientSecondExample.setAttribute('value', "background-image : " + cssProperty);
     }
 
     function copyCode() {
@@ -184,12 +184,12 @@ const conicGradientSecondExample = function () {
     }
     cssPropertyConic = "radial-gradient(circle at 50%, transparent 35%, rgba(169, 234, 254) 35%), conic-gradient(" + cssPropertyConic + ")"
 
-    backgroundConicGradientSecondExample.style.background = cssPropertyConic
+    backgroundConicGradientSecondExample.style.backgroundImage = cssPropertyConic
 
     let copyCodeConicGradientSecondExample = document.querySelector('.conicGradientFirstExample .copyCode input')
     let inputValue = copyCodeConicGradientSecondExample.getAttribute('value');
 
-    copyCodeConicGradientSecondExample.setAttribute('value', cssPropertyConic);
+    copyCodeConicGradientSecondExample.setAttribute('value', "background-image : " + cssPropertyConic);
 
     function copyCode() {
         let copyText = document.querySelector('.conicGradientFirstExample .copyCode input')
