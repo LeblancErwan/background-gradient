@@ -3,7 +3,9 @@
   padding: 0;
   font-family: "Open Sans";
 }
-
+html {
+  scroll-behavior: smooth;
+}
 section {
   width: 100%;
 }
@@ -41,6 +43,7 @@ section {
 }
 
 .copyCode {
+  display: flex;
   padding-left: 2%;
 }
 .copyCode input {
@@ -70,6 +73,19 @@ label {
   padding-bottom: 2%;
   font-size: 18px;
   color: #000;
+}
+.arrows {
+  color: #000;
+  text-align: center;
+}
+.downArrow {
+  color: #000;
+}
+
+.goToTop {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 
 /* Deuxième section */
@@ -157,28 +173,4 @@ label {
   background-size: cover;
   height: 450px;
   margin-bottom: 4%;
-}
-
-/* Responsive tablette */
-@media screen and (max-width: 992px) {
-  /* .textLinearGradientFirstExample {
-    font-size: 24px;
-  }
-
-  .modifCssRules {
-    font-size: 24px;
-  }
-
-  .copyCode input {
-    font-size: 24px !important;
-  }
-
-  .copyCode button {
-    font-size: 20px !important;
-  }
-
-  form span {
-    margin-top: 8% !important;
-    font-size: 20px !important;
-  } */
 }
