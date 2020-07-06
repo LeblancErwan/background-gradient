@@ -3,9 +3,23 @@
   padding: 0;
   font-family: "Open Sans";
 }
-
+html {
+  scroll-behavior: smooth;
+}
 section {
   width: 100%;
+}
+/* section intro */
+#intro {
+  background-color: rgba(16, 52, 166, 0.2);
+  padding: 1px;
+}
+#intro h3,
+#intro h6 {
+  text-align: center;
+}
+#intro h6 {
+  padding-bottom: 4%;
 }
 
 /* Première section */
@@ -22,12 +36,12 @@ section {
   padding-top: 2%;
 }
 
-.visualForLinearGradientFirstExample {
-  background: linear-gradient(70deg, rgb(0, 204, 203) 40%, transparent 0%),
+#visualForLinearGradientFirstExample {
+  background-image: linear-gradient(70deg, rgb(0, 204, 203) 40%, transparent 0%),
     /* rgb(116, 208, 241) */ url("../images/linearGradient1.jpg");
   background-size: cover;
   height: 450px;
-  margin-bottom: 4%; 
+  margin-bottom: 4%;
 }
 
 .modifCssRules {
@@ -41,7 +55,11 @@ section {
 }
 
 .copyCode {
+  display: flex;
   padding-left: 2%;
+}
+.copyCode input {
+  color: #000 !important;
 }
 
 .cssProperties {
@@ -59,13 +77,28 @@ section {
 input {
   color: #fff;
 }
-
-/*.textLinearGradientFirstExample {
+label {
+  color: #fff !important;
+}
+.textLinearGradientFirstExample {
   margin-top: 4%;
   padding-bottom: 2%;
   font-size: 18px;
   color: #000;
-}*/
+}
+.arrows {
+  color: #000;
+  text-align: center;
+}
+.downArrow {
+  color: #000;
+}
+
+.goToTop {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
 
 /* Deuxième section */
 .linearGradientSecondExample,
@@ -77,10 +110,15 @@ input {
   color: #fff;
 }
 
-.visualForLinearGradientSecondExample {
-  background: linear-gradient(-45deg, rgb(96, 80, 220) 30%, transparent 30%),
+#visualForLinearGradientSecondExample {
+  background-image: linear-gradient(
+      135deg,
+      rgb(223, 115, 255) 55%,
+      transparent 45%
+    ),
+    linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%),
+    linear-gradient(-45deg, rgb(96, 80, 220) 30%, transparent 30%),
     linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent 45%),
-    linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent 45%),
     linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
   background-size: cover;
   height: 450px;
@@ -96,32 +134,36 @@ input {
   color: #fff;
 }
 
-.visualForLinearGradientThirdExample {
-  background: linear-gradient(-47deg, rgb(248, 142, 85) 25%, transparent 65%),
-    linear-gradient(45deg, rgb(253, 108, 158) 34%, transparent 78%),
-    linear-gradient(100deg, rgb(223, 115, 255) 55%, transparent 81%),
+#visualForLinearGradientThirdExample {
+  background-image: linear-gradient(
+      -45deg,
+      rgb(248, 142, 85) 30%,
+      transparent 65%
+    ),
+    linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent 78%),
+    linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent 81%),
     linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
   background-size: cover;
   height: 450px;
   margin-bottom: 4%;
 }
 
-.visualForRadialGradientFirstExample {
-  background: radial-gradient(
+#visualForRadialGradientFirstExample {
+  background-image: radial-gradient(
       circle at 50%,
       transparent 34%,
       rgba(223, 242, 255) 35%
     ),
     radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) 34%, #1e90ff 34%),
     url("../images/profilePicture.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: 50% 75%;
   height: 450px;
   margin-bottom: 4%;
 }
 
-.visualForRadialGradientSecondExample {
-  background: radial-gradient(
+#visualForRadialGradientSecondExample {
+  background-image: radial-gradient(
       circle at 0%,
       transparent 30%,
       rgb(96, 80, 220) 82%
@@ -133,46 +175,14 @@ input {
   margin-bottom: 4%;
 }
 
-.visualForConicGradientFirstExample {
-  background: radial-gradient(
+#visualForConicGradientFirstExample {
+  background-image: radial-gradient(
       circle at 50%,
       transparent 35%,
       rgba(169, 234, 254) 35%
     ),
-    conic-gradient(
-      rgb(58, 142, 186) 15deg,
-      rgb(142, 162, 198) 15deg 45deg,
-      rgb(44, 117, 255) 18deg 65deg,
-      rgb(1, 49, 180) 65deg 124deg,
-      rgb(10, 186, 181) 124deg 216deg,
-      rgb(150, 131, 236) 200deg
-    );
+    conic-gradient(rgb(10, 186, 181) 124deg 216deg, rgb(150, 131, 236) 200deg);
   background-size: cover;
   height: 450px;
   margin-bottom: 4%;
 }
-
-/* Responsive tablette *
-@media screen and (max-width: 1024px) {
-  .textLinearGradientFirstExample {
-    font-size: 24px;
-  }
-
-  .modifCssRules {
-    font-size: 24px;
-  }
-
-  .copyCode input {
-    font-size: 24px !important;
-  }
-
-  .copyCode button {
-    font-size: 20px !important;
-  }
-
-  form span {
-    margin-top: 8% !important;
-    font-size: 20px !important;
-  }
-}
-$/
