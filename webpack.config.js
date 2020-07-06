@@ -7,7 +7,7 @@ module.exports = {
     compress: true,
     port: 9000,
   },
-
+  output: { path: path.resolve(__dirname, 'docs') },
   plugins: [
     new CopyPlugin({
       patterns: [
