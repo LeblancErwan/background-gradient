@@ -9,6 +9,18 @@ html {
 section {
   width: 100%;
 }
+/* section intro */
+#intro {
+  background-color: rgba(16, 52, 166, 0.2);
+  padding: 1px;
+}
+#intro h3,
+#intro h6 {
+  text-align: center;
+}
+#intro h6 {
+  padding-bottom: 4%;
+}
 
 /* Première section */
 .linearGradientFirstExample,
