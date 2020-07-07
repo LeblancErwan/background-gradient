@@ -19,7 +19,7 @@
       </i></a>
   </div>
 
-  <section id="intro">
+  <div id="intro">
     <div class="container">
       <h3 class="">Background properties in CSS</h3>
       <div>
@@ -28,13 +28,13 @@
           Once you are satisfied of yourself, just copy it and add it into your project !</h6>
       </div>
     </div>
-  </section>
+  </div>
 
   <section class="linearGradientFirstExample" id="section1">
     <div class="container">
       <div class="contenuLinearGradientFirstExample">
         <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
-          <div class="col l8 m12 s12" id="visualForLinearGradientFirstExample">
+          <div class="col l8 m12 s12 renderProperty" id="visualForLinearGradientFirstExample">
             <button id="copyCodeSection1" class="waves-effect waves-light btn-small flow-text hide-on-med-and-up">
               Copy CSS
             </button>
@@ -97,8 +97,12 @@
     <div class="container">
       <div class="contenuLinearGradientFirstExample">
         <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
-          <div class="col l8 m12 s12" id="visualForLinearGradientSecondExample"></div>
-          <div class="col l3 m12 s12 modifCssRules">
+          <div class="col l8 m12 s12 renderProperty" id="visualForLinearGradientSecondExample">
+            <button id="copyCodeSection2" class="waves-effect waves-light btn-small flow-text hide-on-med-and-up">
+              Copy CSS
+            </button>
+          </div>
+          <div class="col l3 offset-l1 m12 s12 modifCssRules">
             <div class="cssProperties">
 
               <form action="#">
@@ -112,8 +116,8 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12 flow-text">
-            Linear gradient with multiple colors.
+          <div class="center-align col l12 m12 s12 flow-text hide-on-small-only">
+            <p>Linear gradient with multiple colors</p>
             <br /><br />
             <div class="copyCode">
               <input type="text" value="Your code" class="flow-text" readonly />
@@ -121,7 +125,7 @@
                 Copy
               </button>
             </div>
-          </p>
+          </div>
           <div class="arrows">
             <a href="#section3"><i class="material-icons downArrow">keyboard_arrow_down</i></a>
           </div>
@@ -134,8 +138,12 @@
     <div class="container">
       <div class="contenuLinearGradientFirstExample">
         <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
-          <div class="col l8 m12 s12" id="visualForLinearGradientThirdExample"></div>
-          <div class="col l3 m12 s12 modifCssRules">
+          <div class="col l8 m12 s12 renderProperty" id="visualForLinearGradientThirdExample">
+            <button id="copyCodeSection3" class="waves-effect waves-light btn-small flow-text hide-on-med-and-up">
+              Copy CSS
+            </button>
+          </div>
+          <div class="col l3 offset-l1 m12 s12 modifCssRules">
             <div class="cssProperties">
               <p class="flow-text">Gradient :</p>
               <form action="#">
@@ -157,8 +165,8 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12 flow-text">
-            Linear gradient with multiple colors and their gradients.
+          <div class="center-align col l12 m12 s12 flow-text hide-on-small-only">
+            <p>Linear gradient with multiple colors and their gradients</p>
             <br /><br />
             <div class="copyCode">
               <input type="text" value="Your code" class="flow-text" readonly />
@@ -166,7 +174,7 @@
                 Copy
               </button>
             </div>
-          </p>
+          </div>
           <div class="arrows">
             <a href="#section4"><i class="material-icons downArrow">keyboard_arrow_down</i></a>
           </div>
@@ -180,16 +188,20 @@
     <div class="container">
       <div class="contenuLinearGradientFirstExample">
         <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
-          <div class="col l8 m12 s12" id="visualForRadialGradientFirstExample"></div>
-          <div class="col l3 m12 s12 modifCssRules">
+          <div class="col l8 m12 s12 renderProperty" id="visualForRadialGradientFirstExample">
+            <button id="copyCodeSection4" class="waves-effect waves-light btn-small flow-text hide-on-med-and-up">
+              Copy CSS
+            </button>
+          </div>
+          <div class="col l3 offset-l1 m12 s12 modifCssRules">
             <div class="row cssProperties">
               <div class="col l12 m6 s12">
                 <form action="#">
-                  <p class="flow-text">Circle size :</p>
-                  <p class="range-field">
+                  <label for="blueCircle" class="flow-text">Circle size :</label>
+                  <div class="range-field">
                     <input type="range" name="blueCircle" value="34" min="0" max="100" />
-                  </p>
-                  <p class="flow-text">Picture size :</p>
+                  </div>
+                  <label for="pictureCircle" class="flow-text">Picture size :</label>
                   <p class="range-field">
                     <input type="range" name="pictureCircle" value="35" min="0" max="100" />
                   </p>
@@ -198,11 +210,11 @@
               <div class="col l12 m1 s12"></div>
               <div class="col l12 m5 s12">
                 <form action="#">
-                  <p class="flow-text">Circle's gradient:</p>
+                  <label for="degradedBlueCircle" class="flow-text">Circle's gradient :</label>
                   <p class="range-field">
                     <input type="range" name="degradedBlueCircle" value="34" min="0" max="100" />
                   </p>
-                  <p class="flow-text">Picture's gradient :</p>
+                  <label for="degradedPictureCircle" class="flow-text">Picture's gradient :</label>
                   <p class="range-field">
                     <input type="range" name="degradedPictureCircle" value="34" min="0" max="100" />
                   </p>
@@ -212,8 +224,8 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12 flow-text">
-            Radial gradient with an image.
+          <div class="center-align col l12 m12 s12 flow-text hide-on-small-only">
+            <p>Radial gradient with an image.</p>
             <br /><br />
             <div class="copyCode">
               <input type="text" value="Your code" class="flow-text" readonly />
@@ -221,7 +233,7 @@
                 Copy
               </button>
             </div>
-          </p>
+          </div>
           <div class="arrows">
             <a href="#section5"><i class="material-icons downArrow">keyboard_arrow_down</i></a>
           </div>
@@ -234,8 +246,12 @@
     <div class="container">
       <div class="contenuLinearGradientFirstExample">
         <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
-          <div class="col l8 m12 s12" id="visualForRadialGradientSecondExample"></div>
-          <div class="col l3 m12 s12 modifCssRules">
+          <div class="col l8 m12 s12 renderProperty" id="visualForRadialGradientSecondExample">
+            <button id="copyCodeSection5" class="waves-effect waves-light btn-small flow-text hide-on-med-and-up">
+              Copy CSS
+            </button>
+          </div>
+          <div class="col l3 offset-l1 m12 s12 modifCssRules">
             <div class="row cssProperties">
               <div class="col l12 m6 s12">
                 <form action="#">
@@ -258,28 +274,22 @@
               <div class="col l12 m5 s12">
                 <p class="flow-text">Shape :</p>
                 <form action="#">
-                  <p>
-                    <label>
-                      <input name="circleAndEllipseChecked" type="radio" checked />
-                      <span class="flow-text">Circle</span>
-                    </label>
-                  </p>
-                  <p></p>
-                  <p>
-                    <label>
-                      <input name="circleAndEllipseChecked" type="radio" />
-                      <span class="flow-text">Ellipse</span>
-                    </label>
-                  </p>
+                  <label>
+                    <input name="circleAndEllipseChecked" type="radio" checked />
+                    <span class="flow-text">Circle</span>
+                  </label>
+                  <label>
+                    <input name="circleAndEllipseChecked" type="radio" />
+                    <span class="flow-text">Ellipse</span>
+                  </label>
                 </form>
               </div>
-
             </div>
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12 flow-text">
-            Radial gradient with different positions and shapes.
+          <div class="center-align col l12 m12 s12 flow-text hide-on-small-only">
+            <p>Radial gradient with different positions and shapes.</p>
             <br /><br />
             <div class="copyCode">
               <input type="text" value="Your code" class="flow-text" readonly />
@@ -287,7 +297,7 @@
                 Copy
               </button>
             </div>
-          </p>
+          </div>
           <div class="arrows">
             <a href="#section6"><i class="material-icons downArrow">keyboard_arrow_down</i></a>
           </div>
@@ -300,8 +310,12 @@
     <div class="container">
       <div class="contenuLinearGradientFirstExample">
         <div class="row visualAndModifCssRulesForLinearGradientFirstExample">
-          <div class="col l8 m12 s12" id="visualForConicGradientFirstExample"></div>
-          <div class="col l3 m12 s12 modifCssRules">
+          <div class="col l8 m12 s12 renderProperty" id="visualForConicGradientFirstExample">
+            <button id="copyCodeSection6" class="waves-effect waves-light btn-small flow-text hide-on-med-and-up">
+              Copy CSS
+            </button>
+          </div>
+          <div class="col l3 offset-l1 m12 s12 modifCssRules">
             <div class="cssProperties">
               <form action="#">
                 <p class="flow-text">Color's number :</p>
@@ -315,18 +329,16 @@
           </div>
         </div>
         <div class="row textLinearGradientFirstExample">
-          <p class="center-align col l12 m12 flow-text">
-            Conic gradient with multiple colors.
+          <div class="center-align col l12 m12 s12 flow-text hide-on-small-only">
+            <p>Conic gradient with multiple colors.</p>
             <br /><br />
             <div class="copyCode">
               <input type="text" value="Your code" class="flow-text" readonly />
-              <div class="btnCopyCode">
-                <button id="copyCodeSection6" class="waves-effect waves-light btn-small flow-text">
-                  Copy
-                </button>
-              </div>
+              <button id="copyCodeSection6" class="waves-effect waves-light btn-small flow-text">
+                Copy
+              </button>
             </div>
-          </p>
+          </div>
         </div>
       </div>
     </div>
