@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 }
 html {
   scroll-behavior: smooth;
@@ -38,7 +38,7 @@ section {
 
 #visualForLinearGradientFirstExample {
   background-image: linear-gradient(70deg, rgb(0, 204, 203) 40%, transparent 0%),
-    /* rgb(116, 208, 241) */ url("../images/linearGradient1.jpg");
+    /* rgb(116, 208, 241) */ url('../images/linearGradient1.jpg');
   background-size: cover;
   height: 450px;
   margin-bottom: 4%;
@@ -155,7 +155,7 @@ label {
       rgba(223, 242, 255) 35%
     ),
     radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) 34%, #1e90ff 34%),
-    url("../images/profilePicture.jpg");
+    url('../images/profilePicture.jpg');
   background-size: cover;
   background-position: 50% 75%;
   height: 450px;
@@ -168,7 +168,7 @@ label {
       transparent 30%,
       rgb(96, 80, 220) 82%
     ),
-    url("../images/radialGradient2.jpg");
+    url('../images/radialGradient2.jpg');
   background-size: cover;
   background-position: 50% 75%;
   height: 450px;

@@ -167,7 +167,7 @@ const radialGradientfirstExample = function () {
     pictureCircle.value +
     '%, #1e90ff ' +
     degradedPictureCircle.value +
-    "%), url('../images/profilePicture.jpg')";
+    "%), url('images/profilePicture.jpg')";
   backgroundRadialGradientFirstExample.style.backgroundImage = cssProperty;
 
   let copyCodeRadialGradientfirstExample = document.querySelector(
@@ -228,7 +228,7 @@ const radialGradientSecondExample = function () {
       YplaceSecondRadialGradient.value +
       '%, transparent 30%, rgb(96, 80, 220) ' +
       degradeSecondRadialGradient.value +
-      "%), url('../images/radialGradient2.jpg')";
+      "%), url('images/radialGradient2.jpg')";
     backgroundRadialGradientSecondExample.style.backgroundImage = cssProperty;
 
     let copyCodeRadialGradientSecondExample = document.querySelector(
