@@ -3,21 +3,31 @@
   padding: 0;
   font-family: 'Open Sans';
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 section {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-top: 15px;
 }
+
 /* section intro */
 #intro {
   background-color: rgba(16, 52, 166, 0.2);
   padding: 1px;
 }
+
 #intro h3,
 #intro h6 {
   text-align: center;
 }
+
 #intro h6 {
   padding-bottom: 4%;
 }
@@ -26,10 +36,6 @@ section {
 .linearGradientFirstExample,
 .radialGradientFirstExample {
   background-color: rgba(223, 242, 255);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  color: #fff;
 }
 
 .contenuLinearGradientFirstExample {
@@ -38,26 +44,37 @@ section {
 
 #visualForLinearGradientFirstExample {
   background-image: linear-gradient(70deg, rgb(0, 204, 203) 40%, transparent 0%),
-    /* rgb(116, 208, 241) */ url('../images/linearGradient1.jpg');
+    /* rgb(116, 208, 241) */
+    url('../images/linearGradient1.jpg');
+  padding: 3px;
+}
+
+.renderProperty {
   background-size: cover;
-  height: 450px;
+  height: 40vh;
   margin-bottom: 4%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-radius: 10px;
+
 }
 
 .modifCssRules {
   background-color: #1e90ff;
   width: 30%;
-  height: 450px;
   padding: 2%;
   font-size: 18px;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .copyCode {
   display: flex;
   padding-left: 2%;
 }
+
 .copyCode input {
   color: #000 !important;
 }
@@ -77,19 +94,23 @@ section {
 input {
   color: #fff;
 }
+
 label {
   color: #fff !important;
 }
+
 .textLinearGradientFirstExample {
   margin-top: 4%;
   padding-bottom: 2%;
   font-size: 18px;
   color: #000;
 }
+
 .arrows {
   color: #000;
   text-align: center;
 }
+
 .downArrow {
   color: #000;
 }
@@ -104,85 +125,81 @@ label {
 .linearGradientSecondExample,
 .radialGradientSecondExample {
   background-color: rgba(33, 23, 125, 0.2);
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   color: #fff;
 }
 
 #visualForLinearGradientSecondExample {
-  background-image: linear-gradient(
-      135deg,
+  background-image: linear-gradient(135deg,
       rgb(223, 115, 255) 55%,
-      transparent 45%
-    ),
+      transparent 45%),
     linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%),
     linear-gradient(-45deg, rgb(96, 80, 220) 30%, transparent 30%),
     linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent 45%),
     linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
-  background-size: cover;
-  height: 450px;
-  margin-bottom: 4%;
+  padding: 3px;
+
 }
 
 .linearGradientThirdExample,
 .conicGradientFirstExample {
   background-color: rgba(38, 196, 236, 0.1);
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   color: #fff;
 }
 
 #visualForLinearGradientThirdExample {
-  background-image: linear-gradient(
-      -45deg,
+  background-image: linear-gradient(-45deg,
       rgb(248, 142, 85) 30%,
-      transparent 65%
-    ),
+      transparent 65%),
     linear-gradient(45deg, rgb(253, 108, 158) 45%, transparent 78%),
     linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent 81%),
     linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent 43%);
-  background-size: cover;
-  height: 450px;
-  margin-bottom: 4%;
+  padding: 3px;
+
 }
 
 #visualForRadialGradientFirstExample {
-  background-image: radial-gradient(
-      circle at 50%,
+  background-image: radial-gradient(circle at 50%,
       transparent 34%,
-      rgba(223, 242, 255) 35%
-    ),
+      rgba(223, 242, 255) 35%),
     radial-gradient(circle at 50%, rgba(96, 80, 220, 0.1) 34%, #1e90ff 34%),
     url('../images/profilePicture.jpg');
-  background-size: cover;
   background-position: 50% 75%;
-  height: 450px;
-  margin-bottom: 4%;
+  padding: 3px;
+
 }
 
 #visualForRadialGradientSecondExample {
-  background-image: radial-gradient(
-      circle at 0%,
+  background-image: radial-gradient(circle at 0%,
       transparent 30%,
-      rgb(96, 80, 220) 82%
-    ),
+      rgb(96, 80, 220) 82%),
     url('../images/radialGradient2.jpg');
-  background-size: cover;
   background-position: 50% 75%;
-  height: 450px;
-  margin-bottom: 4%;
+  padding: 3px;
+
 }
 
 #visualForConicGradientFirstExample {
-  background-image: radial-gradient(
-      circle at 50%,
+  background-image: radial-gradient(circle at 50%,
       transparent 35%,
-      rgba(169, 234, 254) 35%
-    ),
+      rgba(169, 234, 254) 35%),
     conic-gradient(rgb(10, 186, 181) 124deg 216deg, rgb(150, 131, 236) 200deg);
-  background-size: cover;
-  height: 450px;
-  margin-bottom: 4%;
+  padding: 3px;
+
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+  .renderProperty,
+  .modifCssRules {
+    height: 55vh;
+  }
 }
