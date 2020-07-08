@@ -118,7 +118,7 @@ const linearGradientThirdExample = function () {
     '%), linear-gradient(135deg, rgb(223, 115, 255) 55%, transparent ' +
     thirdDegraded.value +
     '%), linear-gradient(30deg, rgb(121, 248, 248) 100%, transparent ' +
-    fourthDegraded.value +
+    '100' +
     '%)';
   backgroundLinearGradientThirdExample.style.backgroundImage = cssProperty;
 
