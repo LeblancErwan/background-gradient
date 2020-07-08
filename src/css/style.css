@@ -175,7 +175,7 @@ label {
 }
 
 #visualForRadialGradientSecondExample {
-  background-image: radial-gradient(circle at 0%,
+  background-image: radial-gradient(circle at 50% 50%,
       transparent 30%,
       rgb(96, 80, 220) 82%),
     url('../images/radialGradient2.jpg');
