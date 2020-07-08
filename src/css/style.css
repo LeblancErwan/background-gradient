@@ -44,7 +44,6 @@ section {
 
 #visualForLinearGradientFirstExample {
   background-image: linear-gradient(70deg, rgb(0, 204, 203) 40%, transparent 0%),
-    /* rgb(116, 208, 241) */
     url('../images/linearGradient1.jpg');
   padding: 3px;
 }
@@ -55,7 +54,6 @@ section {
   margin-bottom: 4%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
   border-radius: 4px;
 
 }
@@ -73,10 +71,16 @@ section {
 .copyCode {
   display: flex;
   padding-left: 2%;
+  align-items: center;
+  width: 100%;
 }
 
 .copyCode input {
-  color: #000 !important;
+  color: #000;
+}
+
+.copyCode button {
+  margin: 0 10px;
 }
 
 .cssProperties {
@@ -201,5 +205,17 @@ label {
   .renderProperty,
   .modifCssRules {
     height: 55vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .copyCode input {
+    color: #000;
+    flex: 4;
+  }
+
+  .copyCode button {
+    flex: 1;
+    margin: 0 5px;
   }
 }
