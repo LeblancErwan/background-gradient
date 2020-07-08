@@ -44,7 +44,6 @@ section {
 
 #visualForLinearGradientFirstExample {
   background-image: linear-gradient(70deg, rgb(0, 204, 203) 40%, transparent 0%),
-    /* rgb(116, 208, 241) */
     url('../images/linearGradient1.jpg');
   padding: 3px;
 }
@@ -55,8 +54,7 @@ section {
   margin-bottom: 4%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
-  border-radius: 10px;
+  border-radius: 4px;
 
 }
 
@@ -67,16 +65,22 @@ section {
   font-size: 18px;
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .copyCode {
   display: flex;
   padding-left: 2%;
+  align-items: center;
+  width: 100%;
 }
 
 .copyCode input {
-  color: #000 !important;
+  color: #000;
+}
+
+.copyCode button {
+  margin: 0 10px;
 }
 
 .cssProperties {
@@ -175,7 +179,7 @@ label {
 }
 
 #visualForRadialGradientSecondExample {
-  background-image: radial-gradient(circle at 0%,
+  background-image: radial-gradient(circle at 50% 50%,
       transparent 30%,
       rgb(96, 80, 220) 82%),
     url('../images/radialGradient2.jpg');
@@ -188,7 +192,7 @@ label {
   background-image: radial-gradient(circle at 50%,
       transparent 35%,
       rgba(169, 234, 254) 35%),
-    conic-gradient(rgb(10, 186, 181) 124deg 216deg, rgb(150, 131, 236) 200deg);
+    conic-gradient(rgb(1, 49, 180) 65deg 124deg, rgb(10, 186, 181) 124deg 216deg, rgb(150, 131, 236) 200deg);
   padding: 3px;
 
 }
@@ -201,5 +205,17 @@ label {
   .renderProperty,
   .modifCssRules {
     height: 55vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .copyCode input {
+    color: #000;
+    flex: 4;
+  }
+
+  .copyCode button {
+    flex: 1;
+    margin: 0 5px;
   }
 }
