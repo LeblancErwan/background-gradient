@@ -34,25 +34,12 @@ const linearGradientFirstExample = function () {
     let copyCodeLinearGradientFirstExample = document.querySelector(
       '.linearGradientFirstExample .copyCode input'
     );
-    let inputValue = copyCodeLinearGradientFirstExample.getAttribute('value');
 
     copyCodeLinearGradientFirstExample.setAttribute(
       'value',
       'background-image : ' + cssProperty
     );
   }
-
-  function copyCode() {
-    let copyText = document.querySelector(
-      '.linearGradientFirstExample .copyCode input'
-    );
-    copyText.select();
-    document.execCommand('copy');
-  }
-
-  document
-    .getElementById('copyCodeSection1')
-    .addEventListener('click', copyCode);
 };
 
 // section 2 linear gradient
@@ -87,18 +74,6 @@ const linearGradientSecondExample = function () {
       'background-image : ' + cssProperty
     );
   }
-
-  function copyCode() {
-    let copyText = document.querySelector(
-      '.linearGradientSecondExample .copyCode input'
-    );
-    copyText.select();
-    document.execCommand('copy');
-  }
-
-  document
-    .getElementById('copyCodeSection2')
-    .addEventListener('click', copyCode);
 };
 
 // section 3 linear gradient
@@ -131,18 +106,6 @@ const linearGradientThirdExample = function () {
     'value',
     'background-image : ' + cssProperty
   );
-
-  function copyCode() {
-    let copyText = document.querySelector(
-      '.linearGradientThirdExample .copyCode input'
-    );
-    copyText.select();
-    document.execCommand('copy');
-  }
-
-  document
-    .getElementById('copyCodeSection3')
-    .addEventListener('click', copyCode);
 };
 
 // section 1 radial gradient
@@ -179,18 +142,6 @@ const radialGradientfirstExample = function () {
     'value',
     'background-image : ' + cssProperty
   );
-
-  function copyCode() {
-    let copyText = document.querySelector(
-      '.radialGradientFirstExample .copyCode input'
-    );
-    copyText.select();
-    document.execCommand('copy');
-  }
-
-  document
-    .getElementById('copyCodeSection4')
-    .addEventListener('click', copyCode);
 };
 
 // section 2 radial gradient
@@ -241,18 +192,6 @@ const radialGradientSecondExample = function () {
       'background-image : ' + cssProperty
     );
   }
-
-  function copyCode() {
-    let copyText = document.querySelector(
-      '.radialGradientSecondExample .copyCode input'
-    );
-    copyText.select();
-    document.execCommand('copy');
-  }
-
-  document
-    .getElementById('copyCodeSection5')
-    .addEventListener('click', copyCode);
 };
 
 // section 1 conic gradient
@@ -291,18 +230,6 @@ const conicGradientSecondExample = function () {
     'value',
     'background-image : ' + cssPropertyConic
   );
-
-  function copyCode() {
-    let copyText = document.querySelector(
-      '.conicGradientFirstExample .copyCode input'
-    );
-    copyText.select();
-    document.execCommand('copy');
-  }
-
-  document
-    .getElementById('copyCodeSection6')
-    .addEventListener('click', copyCode);
 };
 
 const addEventListenerToInputs = function (inputsCalled, functionCalled) {
