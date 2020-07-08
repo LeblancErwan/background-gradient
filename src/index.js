@@ -263,3 +263,17 @@ addEventListenerToInputs(
   '.radialGradientFirstExample input',
   radialGradientfirstExample
 );
+
+const forms = document.querySelectorAll('form.copyCode');
+const copyPropertyToClipboard = function (event) {
+  event.preventDefault();
+
+  const input = event.srcElement.querySelector('input[name="cssProperty"]');
+  input.select();
+  document.execCommand('copy');
+};
+const attachFunctionToSubmit = function (form) {
+  form.addEventListener('submit', copyPropertyToClipboard);
+};
+
+forms.forEach(attachFunctionToSubmit);
